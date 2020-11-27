@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<body class="bg-gradient-primary"> 
+<body class="bg-gradient-primary">
 
     <div class="container">
 
@@ -19,22 +19,22 @@
                         @csrf
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                        
+
                                             <input id="name" type="text" class="form-control form-control-user @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Nombre">
 
                                     </div>
                             <div class="col-md-6">
-                                <input id="apellido" type="text" class="form-control form-control-user @error('apellido') is-invalid @enderror" apellido="apellido" value="{{ old('apellido') }}" required autocomplete="apellido" autofocus placeholder="Apellido">
+                                <input id="lastname" type="text" class="form-control form-control-user @error('lastname') is-invalid @enderror" name="lastname" value="{{ old('lastname') }}" required autocomplete="lastname" autofocus placeholder="Apellido">
 
-                               
+
                             </div>
                                 </div>
                                                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input id="cedula" type="text" class="form-control form-control-user @error('cedula') is-invalid @enderror" cedula="cedula" value="{{ old('cedula') }}" required autocomplete="cedula" autofocus placeholder="Cedula">
+                                        <input id="nuip" type="text" class="form-control form-control-user @error('nuip') is-invalid @enderror" name="nuip" value="{{ old('nuip') }}" required autocomplete="nuip" autofocus placeholder="Cedula">
                                     </div>
                                     <div class="col-sm-6">
-                                        <input id="telefono" type="text" class="form-control form-control-user @error('telefono') is-invalid @enderror" telefono="telefono" value="{{ old('telefono') }}" required autocomplete="telefono" autofocus placeholder="Telefono">
+                                        <input id="phone" type="text" class="form-control form-control-user @error('phone') is-invalid @enderror" name="phone" value="{{ old('phone') }}" required autocomplete="phone" autofocus placeholder="Telefono">
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -60,7 +60,7 @@
                                         <input id="password-confirm" type="password" class="form-control" placeholder="Confirmar Contraceña"  name="password_confirmation" required autocomplete="new-password">
                                     </div>
                                 </div>
-                               
+
                                 <button type="submit" class="btn btn-primary btn-user btn-block">
                                     {{ __('Registra') }}
                                 </button>
@@ -82,15 +82,15 @@
 
     </div>
 
-    <!-- Bootstrap core JavaScript-->
+    <!-- Bootstrap core JavaScript
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    Core plugin JavaScript-->
+    <!-- <script src="vendor/jquery-easing/jquery.easing.min.js"></script> -->
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+    <!-- <script src="js/sb-admin-2.min.js"></script> --> -->
 
-</body> 
+</body>
 @endsection
