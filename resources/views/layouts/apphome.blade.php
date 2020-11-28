@@ -69,12 +69,17 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Opciones</h6>
                         <a class="collapse-item" href="{{route('employees.index')}}">Empleado</a>
+                        <a class="collapse-item" href="cards.html">Acreditar pagos</a>
                         <!-- Pagar Empleado -->
-                        <a class="collapse-item" href="cards.html">Buscar Empleado</a>
+                        <a class="collapse-item" href="cards.html">Marcar como pagado</a>
                         <!-- ver registro de pago -->
-                        <a class="collapse-item" href="cards.html">Ver registro de pago</a>
+                        <a class="collapse-item" href="cards.html">Descontar pagos</a>
                         <!-- editar cliente -->
-                        <a class="collapse-item" href="cards.html">Editar Empleado </a>
+                        <a class="collapse-item" href="cards.html">Editar pagos </a>
+                        <a class="collapse-item" href="cards.html">Editar usuario  </a>
+                        <a class="collapse-item" href="cards.html">Historial de pagos </a>
+                   
+
                     </div>
                 </div>
 
@@ -480,62 +485,7 @@
                                     </tfoot>
                                     <tbody>
                                         
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
+                                    
                                     <tr role="row" class="odd">
                                             <td class="sorting_1">Airi Satou</td>
                                             <td>Accountant</td>
