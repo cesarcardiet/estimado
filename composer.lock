@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d0c70c14f40b2aff9f0d4703d88a0c07",
+    "content-hash": "310979c201d80fe9ac59bb794d4bd4d0",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -3727,6 +3727,10 @@
                 "jquery",
                 "laravel"
             ],
+            "support": {
+                "issues": "https://github.com/yajra/laravel-datatables/issues",
+                "source": "https://github.com/yajra/laravel-datatables/tree/v9.14.2"
+            },
             "funding": [
                 {
                     "url": "https://www.paypal.me/yajra",
@@ -5540,5 +5544,5 @@
         "php": "^7.1.3"
     },
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }
