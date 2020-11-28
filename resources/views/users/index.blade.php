@@ -1,5 +1,4 @@
 @extends('layouts.apphome')
-
 @section('content')
 
 <!--
@@ -9,32 +8,23 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
 
-
     <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
-
-    <link href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 <div class="container">
 
     <br>
-    <div class="text-center">
-        <h1 class="h4 text-gray-900 mb-4">Empleados</h1>
-    </div>
+    <a class="btn btn-success" href="javascript:void(0)" id="createNewUser">Crear un usuario</a>
     <hr>
 
-    <table class="table table-bordered data-table-employee">
+    <table class="table table-bordered data-table">
 
         <thead>
 
             <tr>
                 <th>Id</th>
-                <th>Nuip</th>
                 <th>Nombre</th>
-                <th>Saldo acreditado</th>
-                <th>Saldo descontado </th>
-                <th>saldo pendiente</th>
+                <th>Email</th>
                 <th width="280px">Action</th>
-
             </tr>
 
         </thead>
@@ -49,7 +39,7 @@
 
 
 
-@include('employees.form')
+@include('users.form')
 
 
 

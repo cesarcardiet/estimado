@@ -16,8 +16,16 @@ class CreateEmployeesTable extends Migration
         Schema::create('employees', function (Blueprint $table) {
             $table->bigIncrements('id');
 
-            // $table->unsignedBigInteger('department_id');
-            // $table->foreign('department_id')->references('id')->on('departments');
+            $table->string('name')->nullable();
+            $table->string('lastname')->nullable();
+            $table->string('nuip')->nullable();
+            $table->string('phone')->nullable();
+            $table->integer('credit_balance')->nullable();
+            $table->integer('discounted_balance')->nullable();
+            $table->integer('outstanding_balance')->nullable();
+
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
 
             $table->timestamps();
         });

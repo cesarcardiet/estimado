@@ -12,6 +12,20 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::unprepared(file_get_contents(__DIR__ . '/sql/users.sql'));
+
+        DB::table('users')->insert([
+            'name' => 'Contructor Company',
+            'role'=>'admin',
+            'email' => 'contructorcompany@gmail.com',
+            'password' => bcrypt('Admin.4'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'test',
+            'role'=>'standard',
+            'email' => 'test@gmail.com',
+            'password' => bcrypt('Test.4'),
+        ]);
+
     }
 }

@@ -18,4 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/editEmployee/{id}', 'EmployeeController@editEmployee')->name('employees.profile');
+Route::put('/editEmployee/employees/{id}', 'EmployeeController@update')->name('employees.editEmployees.udate');
+Route::get('/userProfile/{id}', 'UserController@editProfile')->name('users.profile');
 Route::resource('/employees', 'EmployeeController');
+Route::resource('/users', 'UserController');
